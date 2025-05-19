@@ -28,7 +28,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <RadioButton
-            android:id="@+id/radioDc"
+            android:id="@+id/Dc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="DC" />
@@ -44,4 +44,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Enviar" />
+
+    <ImageView
+        android:id="@+id/marveldcImage"
+        android:layout_width="389dp"
+        android:layout_height="527dp"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="Logo da Marvel vs Dc"
+        android:src="@drawable/dcemarvel" />
 </LinearLayout>

@@ -1,9 +1,10 @@
+package com.example.acenzoperroni
+
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import com.example.acenzoperroni.R
 
 class DcActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

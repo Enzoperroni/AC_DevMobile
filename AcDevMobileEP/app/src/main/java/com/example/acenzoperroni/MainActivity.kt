@@ -1,6 +1,5 @@
 package com.example.acenzoperroni
 
-import DcActivity
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -30,13 +29,13 @@ class MainActivity : AppCompatActivity() {
             val email = emailEditText.text.toString()
             val selectedId = radioGroup.checkedRadioButtonId
 
-            val intent = when (selectedId) {
-                R.id.radioDc -> Intent(this, DcActivity::class.java)
-                R.id.radioMarvel -> Intent(this, MarvelActivity::class.java)
-                else -> null
+            val intent:Intent? =  when(selectedId){
+                R.id.Dc->Intent(this, DcActivity::class.java)
+                R.id.radioMarvel->Intent(this,MarvelActivity::class.java)
+                else->null
             }
 
-            //intent?.putExtra("USER_EMAIL", email)
+            intent?.putExtra("USER_EMAIL", email)
             intent?.let { startActivity(it) }
         }
     }
