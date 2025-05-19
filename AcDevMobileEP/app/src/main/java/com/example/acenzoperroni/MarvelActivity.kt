@@ -12,7 +12,7 @@ import androidx.core.view.WindowInsetsCompat
 class MarvelActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_dc)
+        setContentView(R.layout.activity_marvel)
 
         val email = intent.getStringExtra("USER_EMAIL")
         val buttonEmail: Button = findViewById(R.id.buttonEmail)
@@ -20,8 +20,8 @@ class MarvelActivity : AppCompatActivity() {
         buttonEmail.setOnClickListener {
             val intent = Intent(Intent.ACTION_SENDTO).apply {
                 data = Uri.parse("mailto:$email")
-                putExtra(Intent.EXTRA_SUBJECT, "DC Fans")
-                putExtra(Intent.EXTRA_TEXT, "Obrigado por escolher a DC!")
+                putExtra(Intent.EXTRA_SUBJECT, "Marvel Fans")
+                putExtra(Intent.EXTRA_TEXT, "Obrigado por escolher a Marvel!")
             }
             startActivity(intent)
         }

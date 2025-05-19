@@ -1,11 +1,12 @@
+package com.example.acenzoperroni
+
+import DcActivity
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.RadioGroup
 import androidx.appcompat.app.AppCompatActivity
-import com.example.acenzoperroni.MarvelActivity
-import com.example.acenzoperroni.R
 import com.google.android.material.textfield.TextInputEditText
 
 class MainActivity : AppCompatActivity() {
@@ -35,7 +36,7 @@ class MainActivity : AppCompatActivity() {
                 else -> null
             }
 
-            intent?.putExtra("USER_EMAIL", email)
+            //intent?.putExtra("USER_EMAIL", email)
             intent?.let { startActivity(it) }
         }
     }
